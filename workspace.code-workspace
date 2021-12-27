@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\Data Structure\\javascript-tree"
+		},
+		{
+			"path": "..\\js sir\\sir data structure"
+		},
+		{
+			"path": "..\\Data Structure"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test"
+	}
+}

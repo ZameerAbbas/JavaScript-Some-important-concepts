@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+  body{
+    background-color: blue;
+  }
+</style>
+<body>
+    <button id="id" onclick="onClick()">Check Date</button>
+    <script>
+
+        document.getElementById("id").style.backgroundColor="crimson";
+        document.getElementById("id").style.borderRadius="20%";
+        function onClick(){
+          setTimeout(()=>{
+                document.write(new Date());
+              },1000)  //1000 is equal to 1 sec        
+
+
+        }
+        //define closure and also write a program?
+        //what is callback function and program
+        //what is this key word
+        //what is scope and lexical scope?
+        //type casting  program
+        //array methods types?
+        //what are default parameters
+        //what is spreat operator and programm?
+
+        //any function that is passed into another function as an argument is called callback function
+
+        /*A callback is a function that is to be executed after another function has
+         finished executing known as callback function
+          ..callback are a way to make sure certain code does't exexcute until other code
+          has already finished execution
+         
+         */
+         function funone(){
+             setTimeout(function(){
+                 console.log("this is function one")
+             },3000)
+         }
+         function funtwo(){
+                setTimeout(function(){
+                    console.log("this is function two =>callback");
+                },5000)
+                
+         }
+         funone();
+         funtwo();
+
+      //
+
+        //  function Alpha(a,b){
+        //      let sum = a+b;
+        //      console.log(sum);
+        //  }
+        //  function Beta(c,d){
+        //      let multiple = c*d;
+        //      console.log(multiple);
+        //  }
+
+        //  let Gama = Beta(10,20, Alpha(30,40));
+
+
+        // function fun(a,b){
+        //     sum=a+b
+        //    document.write(sum + "<br>");
+        // }
+        // function fun1(c,d){
+        //     mult=c*d
+        //     document.write(mult + "<br>");
+        // }
+
+        // fun1(12,4 , fun(2,3));
+
+     
+     
+    </script>
+</body>
+</html>

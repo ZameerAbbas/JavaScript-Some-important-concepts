@@ -1,0 +1,80 @@
+<script>
+//ITERATORS
+//    let numbers = [100,200,300];
+// let iter= numbers[Symbol.iterator]();
+
+//    iter.next();
+//    console.log(iter.next().value);
+//    console.log(iter.next().done);
+
+ // to print all value 
+// let numbers = [100,200,300];
+// let iter= numbers[Symbol.iterator]();
+// let result = iter.next();
+// while(!result.done){
+//     console.log(result.value)
+//     result = iter.next();
+// }
+
+
+
+
+/* Regular functions return only one, single value (or nothing).
+
+Generators can return (“yield”) multiple values, one after another, on-demand. 
+They work great with iterables, allowing to create data streams with ease.*/
+
+// //To create a generator, we need a special syntax construct: function*, so-called “generator function”.
+// function* generateSequence() {
+//     yield 1;
+//     yield 2;
+//     yield 3;
+// }
+// let generator = generateSequence();
+// console.log(generator.next().value);
+// generator.next();
+// console.log(generator.next());
+
+
+//using for of
+// function* generateSequence() {
+//     yield 1;
+//     yield 2;
+//     yield 3;
+// }
+// let generator = generateSequence();
+// for(let val of generator){
+//     console.log(val);
+// }
+
+  //unlinited value print using while loop
+// function* generateSequence() {
+//     let num = 200;
+//     while(true){
+//         yield(num++)
+//     }
+
+// }
+// let generator = generateSequence();
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+
+
+
+//printing limited values using for of loop
+// function* generateSequence() {
+//     let num = 200;
+//     while(true){
+//         yield(num++)
+//     }
+
+// }
+// let generator = generateSequence();
+// for(let val of generator){
+//     if(val > 205) break;
+//     console.log(val)
+// }
+
+</script>

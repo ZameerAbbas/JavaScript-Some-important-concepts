@@ -1,0 +1,52 @@
+<script>
+//Error handling
+//error handlin is method of find the error in proper line.
+//some time is diffecalt to find out a error,to find these type of error we use try and catch metod in error handling
+//try and catch method
+//The TRY statement allows you to define a block of code to be tested for errors while it is being executed.
+//The CATCH statement allows you to define a block of code to be executed, if an error occurs in the try block.
+// try{
+//     some code goes here
+// }
+// catch{
+//     when any erro comes in try code
+// }
+
+/*type of error
+1=evalerror
+2=rangeerror
+3=referanceerror
+3=syntaxerror
+4=typeerror
+5=URlerror
+6=aggregate error*/
+
+
+//example
+//   try{
+// console.log("start of try");
+//   bebla;
+// console.log("end of try");
+//   }catch(error){
+//     console.log("here is an error");
+//     console.log(error);
+//     console.log(error.name);
+//     console.log(error.message);
+//     console.log(error.stack);
+//   }
+
+
+  try{
+let json='{"name":"zamir","age":20}';
+let user = JSON.parse(json);
+console.log(user.name);
+console.log(user.age);
+  }catch(error){
+    console.log(error);
+  }
+
+
+
+
+    
+</script>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+    //FOR nested LOOP  
+
+// for(a = 1; a<=5; a++){
+//     for(b = 1; b < a; b++ ){
+//         document.write(b)
+        
+//     }
+//     document.write("<br>")
+// }
+
+// for(a = 1; a<=5; a++){
+//     for(b = 1; b <= a; b++ ){
+//         document.write(a)
+//     }
+//     document.write("<br>")
+// }
+
+    //printing dots in tabluer    
+// for (let i = 1; i <= 5; i++) {
+//     for(let j=1; j<=i; j++){
+//        document.write("*")    
+//     }
+//     document.write("<br>")
+//}
+
+///printing matric number
+
+//  for(var a = 1; a <= 100; a=a+10){
+
+//      for (var b = a; b < a+10;b++){
+//    document.write(b +"       ")
+//    }
+// document.write("<br>")
+//  }
+
+
+//WHILE LOOP
+ 
+
+// var a= 1;
+// while(a < 10 ){
+//  a++;
+//  document.write(a+"<br>"); 
+// }
+
+
+//dowhile
+// var a=1;
+// do{
+//  a++;
+//  document.write(a+"<br>");
+// }
+// while(a <= 10)
+ 
+
+///for loop
+
+// let user=["javascript","yahoobaba","geekshows"];
+// for (let a=0; a<user.length;a++){
+// document.write(user[a]+"<br>")
+// }
+
+// for(let a = 0 ; a <= 10 ; a++){
+//   document.write(a+"<br>")
+// }
+
+
+//for in 
+
+//we can derclear for in loop in arrays and object only
+//by use for in loop we can declear all the properties of an object at one time
+//it has also reduce the code .
+
+
+// forin loop in object 
+// var obj ={
+//   name:"shahzad",
+//   age:12
+// };
+// var x;
+// for(x in obj){
+//   document.write(obj[x]+"<br>")
+// }
+
+
+//forin loop in array 
+
+// var arr =[12,12,12,12]
+// for(let x in arr){
+// document.write(arr[x])
+// }
+
+
+// var obj ={
+//     name:"zamir"
+// }
+// for(let x in obj){
+//     document.write(obj[x])
+// }
+
+
+//FOR OF LOOP
+//uses for all aterable objects
+//it is mainly use for arrays
+
+
+// var arr =[12,12,13];
+// for(let key of arr){
+//   document.write(key+"<br>")
+// }
+
+
+
+
+//  FOREACH LOOP
+//it calls a function once for each element in an array in order
+//it will reduces the code 
+//in the loop we create anonymous
+// var arr = [21,21,"meloo"]
+//  arr.forEach((element,index,arr) => {
+//    document.write(element+"<br>",index+"<br>")
+//  });
+
+
+
+//   var arr =["zamir","meloo",12];
+// arr.forEach(function(name,index){
+//  document.write(name+" "+" "+index +"<br>")
+// })
+
+let user=["javascript","yahoobaba","geekshows"];
+user.forEach(function(value,index,arr){
+    document.write(index+"--"+value+"<br>")
+    // console.log(arr[index]+100)
+})
+
+    </script>
+</body>
+</html>

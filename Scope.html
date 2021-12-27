@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type of scope</title>
+</head>
+<body>
+    <script>
+       // Scope determines the accessibility (visibility) of variables.
+       //It defines the area where variables are available. A variable will normally belong to a certain context of execution.
+       // In this context certain variables- values and expressions are "visible" and or can be refered to. Outside of this, there's no access to the variable.
+        //1GLOBAL SCOPE
+ 
+//global scop can  initialize from any where and can be access from any other scope
+
+   // eg1
+
+// for ( var index = 1; index <+ 20; index++) {
+
+//    console.log(index);
+// }
+// console.log(index);
+
+
+
+//eg2
+
+// var nam = "meloo";
+
+// function f() {
+//    var nam1 ="zamir"
+//    // console.log(nam);
+//    console.log(nam1);
+// }
+
+// // console.log(nam);
+// f();
+
+ //   2LOCAL SCOPE 
+    
+  //1eg
+// function fun(){
+//    let name= "zamir";
+//    console.log(name);  ///it will initialize the string(zamir)
+// }
+// fun();
+
+
+//eg2
+
+// // console.log(dprt);
+// function fun(){
+//    var dprt ="computer science";  //it will not initialize the value of var because we have to declear and initialize the value inside the function or blockcode
+  
+// }
+// console.log(dprt);
+// fun();
+
+  //3LEXICAL SCOPE
+    /*a variable defined outside a function can be accessed inside that function if it's defined after the variable 
+    declaration,the variable inside a function will  not be accessible outside that function
+    */
+  //eg1
+//   var call = "Mr."
+
+//     const Greet = function(name){
+//     const greeting = "Good Morning";
+//     console.log(`${greeting}, ${call} ${name}`)
+// }
+
+// Greet("Saurav")
+
+
+    //eg2
+// let a="jhvrccf"
+// function fname(){
+//   let name="nabneraraf"
+//   function displayName(){  //here we can acess parent function from child function but we cannot access child from parent function
+//     alert(name+a)
+
+//   }
+//   displayName()
+// }
+
+   //eg3
+// function parent(){
+//   var name ="zamir"
+
+// function fo(){
+//   let a="mr"
+//  alert(`${a}.${name}`)
+// }
+// fo()
+// }
+// parent()
+
+
+function fun(){
+
+
+}
+
+
+
+    </script>
+</body>
+</html>

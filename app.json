@@ -1,0 +1,20 @@
+
+
+
+{
+    "people" :[
+        {
+            "name":"zamir",
+            "age" :20
+        },
+        {
+         "name":"saqib",
+         "age" :20
+     },
+     {
+         "name":"mehtab",
+         "age" :20
+     }
+    ]
+}
+

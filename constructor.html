@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+        /*object instance are created with constructor,which are basically special
+        fuction that prepare new inastance of an object for use*/
+        // function Mobile(){
+        //     this.model ='3310';
+        //     this.price =function(){
+        //         document.write(this.model + "price Rs .3000")
+        //     }
+        // }
+        // var sumsang = new Mobile();
+        // var lg = new Mobile();
+        // sumsang.price();  
+        // lg.price();
+
+        //-----constructor example-----
+        //--constructor with parameter
+        function Mobile(model_no){
+            this.model =model_no;
+            this.price = function(){
+                document.write(this.model +"price Rs 300 <br>");
+            }
+        }
+        var samsung = new Mobile('Galaxy');
+        var nokia = new Mobile('3310');
+         samsung.price();
+         nokia.price();
+       
+    </script>
+</body>
+</html>

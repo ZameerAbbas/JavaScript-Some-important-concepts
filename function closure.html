@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function closure</title>
+</head>
+<body>
+    <script>
+      //CLOSURE
+      // a closure give  us access to an outer function's scope from an inner function 
+      //A closure is a function having access to the parent scope, even after the parent function has closed.
+      //is an action that is inner function can have acess to the outer function variables as well as the global variable
+    //combination of a function and the lexical environment within which that function was declared.
+     // self-revoking function.
+
+
+    // function outer(b){
+    //     let a= 10;
+    //     sum = a + b;
+    //     function inner(){
+    //        
+    //         document.write(sum)
+    //     }
+    //     inner();
+    // }
+    //   outer(2)
+
+
+    
+    // var name ="zamir";
+    // function fun(){
+    //   document.write(name)
+    // }
+    // fun()
+
+
+    function makeFunc() {
+  var name = 'Mozilla';
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+
+
+      </script>
+    </script>
+</body>
+</html>

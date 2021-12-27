@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype inheritance</title>
+</head>
+<body>
+    <script>
+
+        //here we ha inherit the property of obj to obj2 which is known as prototypal inheritance
+// let obj={
+//     name:"zamir",
+//     age:20
+// }
+// // console.log(obj.name);
+
+// let obj2={
+//     __proto__:obj,
+// }
+// // console.log(obj2.name);
+// for(x in obj2){
+
+//     console.log(obj2[x])
+// }
+ 
+
+
+// let obj={
+//      name:function(newName){
+//        this.name=newName;
+//      }
+// }
+// let pro= Object.create(obj)
+// pro.name("nabeel")
+// console.log(pro)
+
+
+let va = function (){
+   this.a = 1;
+   this.b = 2;
+}
+let o = new va(); // {a: 1, b: 2}
+// add properties in f function's prototype
+va.prototype.b = 3;
+va.prototype.c = 4
+
+    </script>
+</body>
+</html>

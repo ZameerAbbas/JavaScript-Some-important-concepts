@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        /*The two most used data structures in JavaScript are Object and Array.
+
+    Objects allow us to create a single entity that stores data items by key.
+
+    Arrays allow us to gather data items into an ordered list.
+
+    Although, when we pass those to a function, it may need not an object/array as a whole. 
+    It may need individual pieces.
+
+    Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, 
+    as sometimes that’s more convenient.
+
+    Destructuring also works great with complex functions that have a lot of parameters, default values, 
+    and so on. */
+    
+    // destructuring object
+    //    let user ={
+    //        name:'zamir',
+    //        age:20,
+    //        city:"Gilgit"
+    //    }
+ 
+    //   let {name :n,age:a,city:c} = user
+    //   console.log(n)
+    //   console.log(a)
+    //   console.log(c)
+
+
+     //destructuring in arrays
+        // let user=['zamir',20,'city']
+        //  let[name,age=10,city]=user;
+
+        //  console.log(name,age,city)
+
+//rest operator use
+        // let user=['zamir',20,'city']
+        //  let[name,...args]=user;
+
+        //  console.log(name,args)
+
+         //using function
+             
+                // function user([name,age=10,city]){
+                //     console.log(name)
+                //     console.log(age)
+                //     console.log(city)
+                // }
+                // user(['zamir',20,'city'])
+
+
+                // function user(){
+                //   return ['zamir',20,'city']
+                // }
+                // let[name,age,city]=user();
+                // console.log(name)
+                // console.log(age)
+                // console.log(city)
+     
+         
+
+    //nested array
+        //  let user=['zamir',20,'city',['meloo',2000]]
+        //  let[name,age=10,city,[gender,salary] ]=user;
+
+        //  console.log(name,age,city)
+        //  console.log(gender,salary)
+
+
+   
+
+
+
+    </script>
+</body>
+</html>
